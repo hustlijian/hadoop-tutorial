@@ -1,7 +1,9 @@
-# 动机
+# 介绍
 
 Hadoop 作为大数据的平台代表，是每一个从事大数据开发者都值得学习的，刚好我入职的后要做的项目是一个
 大数据平台，所以要提前学习下 Hadoop 的使用，包括 hive 和 MapReduce 等的使用。
+
+可以在我的博客中看到[Hadoop 入门教程](http://hustlijian.github.io/tutorial/2015/06/19/Hadoop%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8.html)本文。
 
 ## 目标
 
@@ -21,7 +23,7 @@ to the "ecosystem", or collection of additional software packages that can be
 installed on top of or alongside Hadoop, such as Apache Pig, Apache Hive, Apache
 HBase, Apache Spark, and others.
 
-## HDFS(Hadoop Distributed File System (HDFS))
+## HDFS(Hadoop Distributed File System)
 
 The **Hadoop distributed file system (HDFS)** is a distributed, scalable, and portable
  file-system written in Java for the Hadoop framework. A Hadoop cluster has

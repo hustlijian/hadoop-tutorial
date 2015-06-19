@@ -3,11 +3,12 @@
 Hadoop 作为大数据的平台代表，是每一个从事大数据开发者都值得学习的，刚好我入职的后要做的项目是一个
 大数据平台，所以要提前学习下 Hadoop 的使用，包括 hive 和 MapReduce 等的使用。
 
-可以在我的博客中看到[Hadoop 入门教程](http://hustlijian.github.io/tutorial/2015/06/19/Hadoop%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8.html)本文。
+可以在我的博客[Hadoop 入门教程](http://hustlijian.github.io/tutorial/2015/06/19/Hadoop%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8.html)中看到本文。
+github 的渲染效果比我的好呀。
 
 ## 目标
 
-Hadoop 自己找找资料， 有环境的话，用 streaming， python 写一个 wordcount
+Hadoop 自己找资料， 搭建环境，用 [streaming](https://hadoop.apache.org/docs/r1.2.1/streaming.html)， python 写一个 wordcount
 
 # Hadoop 介绍
 
@@ -46,6 +47,8 @@ to the data as possible.
 
     Reduce(k2, list (v2)) → list(v3)
 
+参考论文：[MapReduce: Simplified Data Processing on Large Clusters](http://research.google.com/archive/mapreduce.html)
+
 ## Hive
 
 Apache Hive is a data warehouse infrastructure built on top of Hadoop for
@@ -62,7 +65,6 @@ converts queries to map/reduce, Apache Tez and Spark jobs.
 使用mac Yosemite(10.10.3)
 
     brew insall hadoop
-​
     $ hadoop version
 
     Hadoop 2.7.0
@@ -288,7 +290,6 @@ streaming 在 brew 中的目录是：`/usr/local/Cellar/hadoop/2.7.0/libexec/sha
 
     import sys
 
-
     current_word = None
     current_count = 0
     word = None
@@ -333,13 +334,13 @@ streaming 在 brew 中的目录是：`/usr/local/Cellar/hadoop/2.7.0/libexec/sha
 * [The Notebooks of Leonardo Da Vinci](http://www.gutenberg.org/etext/5000)
 * [Ulysses by James Joyce](http://www.gutenberg.org/etext/4300)
 
-    $ ls -l
-    total 7200
-    -rwxr-xr-x  1 username  staff      165 Jun 19 20:43 mapper.py
-    -rw-r-----@ 1 username  staff   674570 Jun 19 21:14 pg20417.txt
-    -rw-r-----@ 1 username  staff  1573151 Jun 19 21:14 pg4300.txt
-    -rw-r-----@ 1 username  staff  1423803 Jun 19 21:16 pg5000.txt
-    -rwxr-xr-x  1 username  staff      539 Jun 19 20:51 reducer.py
+        $ ls -l
+        total 7200
+        -rwxr-xr-x  1 user  staff      165 Jun 19 20:43 mapper.py
+        -rw-r-----@ 1 user  staff   674570 Jun 19 21:14 pg20417.txt
+        -rw-r-----@ 1 user  staff  1573151 Jun 19 21:14 pg4300.txt
+        -rw-r-----@ 1 user  staff  1423803 Jun 19 21:16 pg5000.txt
+        -rwxr-xr-x  1 user  staff      539 Jun 19 20:51 reducer.py
 
 2.上传文件到 HDFS
 
